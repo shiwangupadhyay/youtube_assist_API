@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+langchain
+python-dotenv
+langchain-nvidia-ai-endpoints
+langchain_community
+youtube-transcript-api
