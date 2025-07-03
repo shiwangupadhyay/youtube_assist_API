@@ -11,3 +11,5 @@ llama = ChatNVIDIA(
   max_tokens=4096,
 )
 Summarizer_model = llama.with_structured_output(SummarizerOutput)
+
+quiz_model = llama
