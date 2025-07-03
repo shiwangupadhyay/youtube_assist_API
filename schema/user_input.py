@@ -6,3 +6,8 @@ class SummarizerInput(BaseModel):
 class QuizInput(BaseModel):
     url : HttpUrl = Field(...,description='URL of the Youtube Video to generate Quiz.')
     no_of_questions : int = Field(...,description='No. of Questions You want to generate.')
+
+class ChatInput(BaseModel):
+    url : HttpUrl = Field(...,description='URL of the Youtube Video to chat from.')
+    query : str = Field(...,description='Enter your Query you want answer of.')
+    session_id: str = Field(..., description='Unique session ID.')

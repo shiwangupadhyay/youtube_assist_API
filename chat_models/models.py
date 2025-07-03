@@ -13,3 +13,5 @@ llama = ChatNVIDIA(
 Summarizer_model = llama.with_structured_output(SummarizerOutput)
 
 quiz_model = llama
+
+chat_model = llama
