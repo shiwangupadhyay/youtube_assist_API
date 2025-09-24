@@ -129,7 +129,7 @@ async def chat(input_data: ChatInput):
             for msg in session["history"]
         ])
 
-        response = chat_model([HumanMessage(content=context)])
+        response = chat_model.invoke([HumanMessage(content=context)])
 
         session["history"].append(AIMessage(content=response.content))
 
